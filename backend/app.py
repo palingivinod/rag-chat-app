@@ -82,8 +82,8 @@ class EmailRequest(BaseModel):
 
 @app.post("/send-email")
 def send_email(data: EmailRequest):
-    sender = "palingivinod2004@gmail.com"
-    password = "txjm dfls mqqj jgrl"
+    sender = ""
+    password = ""
 
     msg = MIMEText(data.content)
     msg["Subject"] = "RAG Assistant Response"
