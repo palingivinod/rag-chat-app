@@ -40,8 +40,8 @@ async def upload(file: UploadFile):
     )
 
     docs = text_splitter.split_documents(docs)
-    print("📄 Loaded docs:", len(docs))
-    # ✅ Add metadata for multi-doc tracking
+    print("Loaded docs:", len(docs))
+    # Add metadata for multi-doc tracking
     for doc in docs:
         doc.metadata["source"] = file.filename
 
